@@ -523,7 +523,7 @@ function readEXIFData(file, start)
 }
 
 //Based on HEIC format decoded via https://github.com/exiftool/exiftool
-function findEXIFinHEIC(data)
+export function findEXIFinHEIC(data)
 {
     var dataView = new DataView(data);
     var ftypeSize = dataView.getUint32(0); // size of ftype box
