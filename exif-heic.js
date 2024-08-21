@@ -570,7 +570,7 @@ export function findEXIFinHEIC(data)
 }
 
 //Based on Exif.js (https://github.com/exif-js/exif-js)
-function findEXIFinJPEG(data)
+export function findEXIFinJPEG(data)
 {
     var dataView = new DataView(data);
     if ((dataView.getUint8(0) != 0xFF) || (dataView.getUint8(1) != 0xD8))
